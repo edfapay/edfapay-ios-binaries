@@ -1,6 +1,6 @@
 # EdfaPay SoftPOS Swift SDK
 
-Swift-native iOS SDK for EdfaPay SoftPOS payments. Ports the Android `card-sdk` business logic (API calls, transaction flow, session management, crypto) with a **callback-based public API** mirroring the Android `EdfaPayPlugin` 1:1.
+Swift-native iOS SDK for EdfaPay SoftPOS payments.
 
 **Card acceptance is a seam, not an implementation.** NFC/APDU/EMV processing is performed by an external reader (Dspread CR100 BLE, or Tap to Pay on iPhone) and fed into the SDK through the `CardReader` / `ExternalNfcReader` protocols. The SDK handles authentication, server submission, retries, and UI coordination.
 
